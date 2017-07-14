@@ -20,7 +20,8 @@ app.get('/faq', function (req, res) {
 
 // post request
 app.post('/')
+var port = process.env.PORT || 3000
 
-app.listen(3000), function () {
+app.listen(port, function () {
   console.log('express is running on port 3000');
-}
+})
